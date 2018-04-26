@@ -1,0 +1,23 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en">
+    <script src="mock.js"></script>
+    <script src="lazer-scroller.js"></script>
+    <!-- <script src="scrollUpTest.js"></script> -->
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Title Goes Here</title>
+    </head>
+    <body onload="setup({ 
+            wrapperId: 'wrapper', 
+            loadAbove: generateAbove, 
+            loadBelow: generateBelow, 
+            amountLoadedAbove: 4, 
+            amountLoadedBelow: 3, 
+            forgetItemsAbove: true,
+            forgetItemsBelow: true,
+            loadDirection: 'down',
+        }, true);">
+        <div id="wrapper" style="height: 200px; width: 100px; position: relative; top: 300px;"></div>
+    </body>
+</html>
